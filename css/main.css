@@ -1,0 +1,67 @@
+/* 
+    Document   : main
+    Created on : Jul 5, 2011, 10:32:57 PM
+    Author     : esmiz
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    font-family: Arial;
+}
+
+.container {    
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+
+h1 {
+    
+   font-size:30px;
+   text-align: center;
+   color: #223344;
+    
+}
+
+h2 {
+    
+   font-size:25px;
+   text-align: center;
+   color: #223344;
+    
+}
+
+input {  
+      background-color: #EEEEEE;
+      font-size: 18px;
+      text-align: center;
+      border: 1px solid black;
+}  
+
+label {
+      font-size: 18px;
+      font-family: Arial;
+      width: 86px;
+     display: inline-block;      
+}
+
+.results li { 
+    list-style: none;
+}
+
+.results {
+    font-size: 38px;
+    clear: both;
+    color: #223344;
+    text-align: center;
+}
+
+.form {
+    
+    margin-top: 20px;
+    border: 1px solid lightslategrey;
+   padding: 10px;
+   
+}

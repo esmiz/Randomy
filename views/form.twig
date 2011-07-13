@@ -1,0 +1,16 @@
+
+<div class="form">
+  <form action="/random">  
+    {{ _self.input('text','Desde',( from ? from : 1 ), '4' ) }}
+    {{ _self.input('text','Hasta',( to ? to : 100),'4' ) }}    
+    {{ _self.input('text','Cuantos',( howmany ? howmany : 1 ) ,'4') }}
+    {{ _self.input('submit','','Randomy!')}}      
+ </form>
+</div>    
+
+{% macro input(type, name, value, size) %}
+<p><label for="{{ name }}">{{ name }}</label>
+    <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value }}" size="{{ size|default(20) }}" />
+</p>
+{% endmacro %}
+

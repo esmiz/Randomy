@@ -1,0 +1,25 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+<h1>{{ title }}</h1>
+<div class="results">
+    <ul>
+        
+    {% for result in results %}
+
+        <li>{{ result }}</li> 
+
+    {% else %}    
+        
+        <li> error! </li>
+        
+    {% endfor %}
+        
+     </ul>   
+</div>
+
+      <h2>Generar otro número</h2>  
+        
+     {% include 'form.twig' %}    
+        
+{% endblock %}
